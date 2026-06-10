@@ -8,4 +8,8 @@ router.get('/trips', tripsController.tripsList);
 //GET method for tripsFindByCode
 router.get('/trips/:tripCode', tripsController.tripsFindByCode);
 
+router.post('/trips', tripsController.tripsAddTrip);
+
+router.put('/trips/:tripCode', tripsController.tripsUpdateTrip);
+
 module.exports = router;
