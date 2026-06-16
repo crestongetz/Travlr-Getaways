@@ -136,3 +136,4 @@ vite.config.ts.timestamp-*
 
 #dotenv environment variables file
 .env
+*.code-workspace
