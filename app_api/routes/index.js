@@ -1,15 +1,58 @@
 const express = require('express');
 const router = express.Router();
+const jwt = require('jsonwebtoken');
+
+// Method to authenticate our JWT
+//checks auth header
+function authenticateJWT(req, res, next) {
+    // console.log('In Middleware');
+    const authHeader = req.headers['authorization'];
+    // console.log('Auth Header: ' + authHeader);
+    if (authHeader == null) {
+        console.log('Auth Header Required but NOT PRESENT!');
+        return res.sendStatus(401);
+    }
+
+    const headers = authHeader.split(' ');
+    if (headers.length < 1) {
+        console.log('Not enough tokens in Auth Header: ' + headers.length);
+        return res.sendStatus(501);
+    }
+
+    const token = authHeader.split(' ')[1];
+    // console.log('Token: ' + token);
+    if (token == null) {
+        console.log('Null Bearer Token');
+        return res.sendStatus(401);
+    }
+
+    // console.log(process.env.JWT_SECRET);
+    // console.log(jwt.decode(token));
+    const verified = jwt.verify(token, process.env.JWT_SECRET, (err, verified) => {
+        if (err) {
+            return res.sendStatus(401).json('Token Validation Error!');
+        }
+        req.auth = verified; // Set the auth param to the decoded object
+    });
+    next(); // We need to continue or this will hang forever
+}
 
 const tripsController = require('../controllers/trips');
+const authenticationController = require('../controllers/authentication');
 
 router.get('/trips', tripsController.tripsList);
 
 //GET method for tripsFindByCode
 router.get('/trips/:tripCode', tripsController.tripsFindByCode);
 
-router.post('/trips', tripsController.tripsAddTrip);
+router.post('/trips', tripsController.tripsAddTrip, authenticateJWT);
 
-router.put('/trips/:tripCode', tripsController.tripsUpdateTrip);
+router.put('/trips/:tripCode', tripsController.tripsUpdateTrip, authenticateJWT);
+
+// route for registering a new user
+router.post('/register', authenticationController.register);
+
+// route for logging in an existing user
+router.post('/login', authenticationController.login);
 
 module.exports = router;

@@ -133,4 +133,7 @@ vite.config.ts.timestamp-*
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+
+#dotenv environment variables file
+.env
 *.code-workspace
