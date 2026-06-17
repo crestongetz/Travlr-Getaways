@@ -28,13 +28,13 @@ function authenticateJWT(req, res, next) {
 
     // console.log(process.env.JWT_SECRET);
     // console.log(jwt.decode(token));
-    const verified = jwt.verify(token, process.env.JWT_SECRET, (err, verified) => {
+    jwt.verify(token, process.env.JWT_SECRET, (err, verified) => {
         if (err) {
-            return res.sendStatus(401).json('Token Validation Error!');
+            return res.sendStatus(401);
         }
-        req.auth = verified; // Set the auth param to the decoded object
+        req.auth = verified;
+        next();
     });
-    next(); // We need to continue or this will hang forever
 }
 
 const tripsController = require('../controllers/trips');
@@ -45,9 +45,9 @@ router.get('/trips', tripsController.tripsList);
 //GET method for tripsFindByCode
 router.get('/trips/:tripCode', tripsController.tripsFindByCode);
 
-router.post('/trips', tripsController.tripsAddTrip, authenticateJWT);
+router.post('/trips', authenticateJWT, tripsController.tripsAddTrip);
 
-router.put('/trips/:tripCode', tripsController.tripsUpdateTrip, authenticateJWT);
+router.put('/trips/:tripCode', authenticateJWT, tripsController.tripsUpdateTrip);
 
 // route for registering a new user
 router.post('/register', authenticationController.register);
