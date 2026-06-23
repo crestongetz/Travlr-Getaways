@@ -33,7 +33,7 @@ To run, you will need:
 2. Run `npm start` in the project root
 3. The server will start on **http://localhost:3000**
 4. Visit that URL on any web browser
-![Picture of Express MVC Home](https://private-user-images.githubusercontent.com/167683310/611807199-3adc0dce-08be-41e9-bacc-a7434055c1f8.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODIyMTcyOTgsIm5iZiI6MTc4MjIxNjk5OCwicGF0aCI6Ii8xNjc2ODMzMTAvNjExODA3MTk5LTNhZGMwZGNlLTA4YmUtNDFlOS1iYWNjLWE3NDM0MDU1YzFmOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyM1QxMjE2MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNDRlODJiZWQ1YzA1NzEzZDU0ZmViMjA0MTVmNWU0YmNkYzE1MGZjMDJiYWZiZjViOGNhMjA4MTU0ZDlhMjVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.WJlU-SmnRf5vCb1cyjZzNtKhSb0QjqDx6Po-T4bhf3U)
+![Picture of Express MVC Home](https://github.com/crestongetz/CS-465-Full-Stack-Development/blob/a12258cbada397051f28a951a71cae17a2060785/images/Express%20App%20Home.png)
 
 ### How to Run Angular SPA
 1. Open a new terminal (the SPA makes API calls to the Express backend)
