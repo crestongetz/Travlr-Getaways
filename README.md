@@ -64,6 +64,11 @@ A NoSQL database (MongoDB) was used for its flexibility compared to SQL. MongoDB
 
 ## Functionality & Testing
 
+As mentioned above, JSON ties together the application by being universally compatible across the tools used. It acts as the translator and transport method for the front and backend of the application. When an admin in the SPA creates a new trip, an HTTP request is sent to the database, which will store it. And when the frontend needs data from the database, it sends a request, and the database will respond with JSON. JSON is language-independent, so it doesn't matter what language we use. It is also lightweight and fast. Having all requests in JSON improves maintainability and flexibility.
+
+Throughout the development of this application, I refactored code to improve the user interface. One example can be seen in the screenshot for the Angular SPA above and below. When you log into the SPA, buttons to add a trip and edit an existing one will appear, but they will not appear if the user is not logged in. This reduces friction, improves security, and enhances user experience.
+![Picture of Angular SPA while logged In](https://private-user-images.githubusercontent.com/167683310/611820302-b2d6fa0d-ff26-4dfa-a1c3-83b05e6b4c8d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODIyMTg1MTAsIm5iZiI6MTc4MjIxODIxMCwicGF0aCI6Ii8xNjc2ODMzMTAvNjExODIwMzAyLWIyZDZmYTBkLWZmMjYtNGRmYS1hMWMzLTgzYjA1ZTZiNGM4ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyM1QxMjM2NTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zNTM4NmJkMzcxOGRiNDRiZjgxNjNkMjYxMzZkMzNmNjA1MzlhOGNiMTE4YTEyYjc1NDNhNjZlMzc1NmU1YTcwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.QEWWEWATuispvsSCjUnDLWmRV1Wa6n7WiFFnsZeO_iU)
+
 
 ## Future Improvements 
 
