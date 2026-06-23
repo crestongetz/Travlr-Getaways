@@ -62,14 +62,25 @@ travlr/
 Various frontend frameworks were used for the two applications. The Express MVC app utilizes HTML, CSS, and some JavaScript. The Angular SPA also uses HTML and CSS but makes heavy use of components, services, and routes, which are unique to Angular. The main difference between the two is where they are run. The HTML for the Express MVC is running on the server, while the Angular SPA will be sent and run on the user's web browser. 
 A NoSQL database (MongoDB) was used for its flexibility compared to SQL. MongoDB uses JSON, which is the standard form of communication for other parts of this application. JSON can be converted into JS objects and vice versa. Using a NoSQL database also makes future changes to the applications much easier.
 
-## Functionality & Testing
+## Functionality & Development 
 
 As mentioned above, JSON ties together the application by being universally compatible across the tools used. It acts as the translator and transport method for the front and backend of the application. When an admin in the SPA creates a new trip, an HTTP request is sent to the database, which will store it. And when the frontend needs data from the database, it sends a request, and the database will respond with JSON. JSON is language-independent, so it doesn't matter what language we use. It is also lightweight and fast. Having all requests in JSON improves maintainability and flexibility.
 
 Throughout the development of this application, I refactored code to improve the user interface. One example can be seen in the screenshot for the Angular SPA above and below. When you log into the SPA, buttons to add a trip and edit an existing one will appear, but they will not appear if the user is not logged in. This reduces friction, improves security, and enhances user experience.
 ![Picture of Angular SPA while logged In](https://private-user-images.githubusercontent.com/167683310/611820302-b2d6fa0d-ff26-4dfa-a1c3-83b05e6b4c8d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODIyMTg1MTAsIm5iZiI6MTc4MjIxODIxMCwicGF0aCI6Ii8xNjc2ODMzMTAvNjExODIwMzAyLWIyZDZmYTBkLWZmMjYtNGRmYS1hMWMzLTgzYjA1ZTZiNGM4ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyM1QxMjM2NTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zNTM4NmJkMzcxOGRiNDRiZjgxNjNkMjYxMzZkMzNmNjA1MzlhOGNiMTE4YTEyYjc1NDNhNjZlMzc1NmU1YTcwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.QEWWEWATuispvsSCjUnDLWmRV1Wa6n7WiFFnsZeO_iU)
 
+On top of developing for user experience, I built the application with as many reusable interface components as possible. For example, in the Express MVC app, the header and footer are built using Handlebars, which allows us to add a few lines to any HTML file rather than all the code for it. Using reusable UI components is extremely beneficial for maintainability, flexibility, and future updates or changes.
 
-## Future Improvements 
+## Testing
+API endpoints are critical for both parts of the application. Ensuring that the endpoints work as expected and are secure is important. Throughout the development of the application, **Postman** was used to test all of the API endpoints. 
+```
+
+```
+
+## Future Improvements
+1. Improve the UI for both applications for production
+2. Integrate security into more parts
+3. Make the client-side application more dynamic
+4. Add more features to the Admin SPA 
 
 ## Reflection
