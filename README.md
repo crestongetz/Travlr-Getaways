@@ -1,4 +1,4 @@
-# CS-465-Full-Stack-Development
+# Travlr-Getaways
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -23,7 +23,7 @@ To run, you will need:
 - [Angular CLI](https://angular.io/cli) v17 (for the SPA only): `npm install -g @angular/cli`
 
 ### After downloading the necessary software, do the following:
-1. Run `git clone https://github.com/crestongetz/CS-465-Full-Stack-Development.git`
+1. Run `git clone https://github.com/crestongetz/Travlr-Getaways.git`
 1. Ensure an .env file is present; this project requires one, and it was not published here for good practice. Put it in the project root `JWT_SECRET=your_secret_here`
 2. Ensure MongoDB is running and on the default port
 3. (Optional) If you want the initial trip data to show without having to add it manually, use the `app_api/seed/trips.js` file
