@@ -16,6 +16,8 @@ Travlr Getaways is a full-stack web application designed for seamless travel boo
 
 Both share a common REST API (`app_api/`) backed by MongoDB.
 
+You can view the full Software Design Doc here: [Design Doc](https://github.com/crestongetz/Travlr-Getaways/blob/29d313213b0796eab52a46aa5a834dff060261d2/images/Travlr%20Software%20Design%20Document.pdf)
+
 ## Getting Started
 To run, you will need:
 - [Node.js](https://nodejs.org/) v18+
