@@ -22,7 +22,7 @@ To run, you will need:
 - [MongoDB](https://www.mongodb.com/) running locally on the default port
 - [Angular CLI](https://angular.io/cli) v17 (for the SPA only): `npm install -g @angular/cli`
 
-After downloading the necessary software, do the following:
+### After downloading the necessary software, do the following:
 1. Ensure an .env file is present; this project requires one, and it was not published here for good practice. Put it in the project root `JWT_SECRET=your_secret_here`
 2. Ensure MongoDB is running and on the default port
 3. (Optional) If you want the initial trip data to show without having to add it manually, use the `app_api/seed/trips.js` file
