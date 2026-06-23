@@ -72,10 +72,30 @@ Throughout the development of this application, I refactored code to improve the
 On top of developing for user experience, I built the application with as many reusable interface components as possible. For example, in the Express MVC app, the header and footer are built using Handlebars, which allows us to add a few lines to any HTML file rather than all the code for it. Using reusable UI components is extremely beneficial for maintainability, flexibility, and future updates or changes.
 
 ## Testing
-API endpoints are critical for both parts of the application. Ensuring that the endpoints work as expected and are secure is important. Throughout the development of the application, **Postman** was used to test all of the API endpoints. 
-```
+API endpoints are critical for both parts of the application. Ensuring that the endpoints work as expected and are secure is important. Throughout the development of the application, **Postman** was used to test all of the API endpoints. Postman offers a feature that allows me to test the endpoints that I added authentication to by using a JWT. The JWT tokens for this application are created when a user creates an account or logs in and will last one hour. Each of the endpoints uses an HTTP request to identify what action needs to be taken. For example, a GET request indicates something is going to be retrieved or sent, such as a trip.
 
-```
+
+| Method | URL | Purpose | Notes |
+| :--- | :--- | :--- | :--- |
+| `GET` | `/api/trips` | Get a list of all the trips | Returns a list of all Trips |
+| `GET` | `/api/trips/:tripCode` | Filter the trips and only get one trip by its code | Returns a single trip identified by the trip code inside the URL |
+| `POST` | `/api/trips` | Adds a trip to the database | Send JSON to database. User must be logged in (JSON web token) |
+| `PUT` | `/api/trips/:tripCode` | Edits the trips in the database | Send JSON to Database. Requires user to be logged in (JSON web token) |
+| `POST` | `/api/register` | Registers a new user | Creates a JSON web token on success. Hashes the password. |
+| `POST` | `/api/login` | Logs in an existing user | Checked email and password hash and created a JSON web token upon valid login. |
+
+
+
+Testing the `GET` endpoints `/api/trips` and `/api/trips/tripcode` was straightforward, as all they do is return one or many trips and require no authentication. 
+
+Testing the `POST` `/api/trips` endpoint required using a generated JSON Web Token (JWT) to simulate a logged-in state. This `POST` method sends JSON data to the database to append a new trip, powering the "Add Trip" functionality within the Single Page Application (SPA). 
+
+The `/api/trips/:tripcode` endpoint handles trip modifications and similarly mandates a valid JWT. This route was verified via Postman and through the "Edit Trip" interface in the SPA.
+
+Finally, the `/api/register` and `/api/login` endpoints facilitate user account creation and authentication to provision JWTs. These authentication flows were validated using Postman alongside the SPA's built-in login and sign-out components. They share a significant amount of underlying logic, meaning a user currently requires their name to authenticate, though this behavior can be refactored in future iterations. 
+
+Throughout development, DBeaver was utilized to monitor database state and guarantee data integrity across all transactions.
+
 
 ## Future Improvements
 1. Improve the UI for both applications for production
