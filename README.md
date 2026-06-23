@@ -9,6 +9,9 @@
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 ## Overview
+Travlr Getaways is a full-stack web application designed for seamless travel booking and management. Built utilizing the MEAN stack (MongoDB, Express.js, Angular, Node.js), the system is divided into two distinct applications to optimize performance, security, and usability:
+- Customer Portal: Developed using the Model-View-Controller (MVC) pattern, providing users with a platform to create accounts, search travel packages, book reservations, and track itineraries.
+- Administrative Dashboard: A Single Page Application (SPA), allowing staff to efficiently manage customer data, trip packages, and pricing dynamically without full page reloads thanks to Angular.
 
 ## Getting Started
 
