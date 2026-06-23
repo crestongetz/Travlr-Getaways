@@ -109,6 +109,6 @@ Throughout development, DBeaver was utilized to monitor database state and guara
 4. Add more features to the Admin SPA 
 
 ## Reflection
-This course and project have significantly improved my professional and personal development. By architecting a web application, I gained an understanding of end-to-end system design, including database management, real-world API development, and testing. A critical milestone was implementing authentication and security protocols to safeguard both web endpoints and user data.
+This course and project have significantly improved my professional and personal development. By creating a web application, I gained an understanding of end-to-end system design, including database management, real-world API development, and testing. A critical milestone was implementing authentication and security protocols to safeguard both web endpoints and user data.
 
 Learning how RESTful APIs and modern frontend-backend work helped me bridge the gap between theory and practical, production-ready software engineering. While full-stack development is vast, this experience has given me the technical foundation and self-reliance to confidently design, build, and troubleshoot complex applications independently. Moving forward, I am eager to leverage what I have learned to either drive innovation within an established enterprise or in a fast-paced environment.
