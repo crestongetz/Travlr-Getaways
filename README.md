@@ -42,7 +42,7 @@ To run, you will need:
 3. Run `ng serve` to start the Angular application
 4. The Angular application will start on **http://localhost:4200**
 5. Visit that URL in any web browser
-![Picture of Angular SPA Home](https://private-user-images.githubusercontent.com/167683310/611807294-6b0b38e1-46d7-45e8-9728-806dea85747c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODIyMTcyOTgsIm5iZiI6MTc4MjIxNjk5OCwicGF0aCI6Ii8xNjc2ODMzMTAvNjExODA3Mjk0LTZiMGIzOGUxLTQ2ZDctNDVlOC05NzI4LTgwNmRlYTg1NzQ3Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyM1QxMjE2MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMTA0ZGU3ZWJkNDE1NzIzZmU2OGQ0YmZmOTNhYmZjM2NmMzBlYmU3YThkOGNiNDk1MzBiZWEyOWUzMGUxYmJiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.U9S7l4ZG5PwiWgNR0FXuLovR33FuziIi_jktfq-sSbE)
+![Picture of Angular SPA Home](https://github.com/crestongetz/CS-465-Full-Stack-Development/blob/2b40d7b2a2d9fc1e3a7c6910cd1d7a61b4fe6841/images/Angular%20SPA%20Home.png)
 
 
 ## Architecture
