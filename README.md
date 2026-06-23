@@ -59,8 +59,11 @@ travlr/
 └── public/             # Static assets (CSS, images)
 ```
 
-Various frontend frameworks were used for the two applications. The Express MVC app utilizes HTML, CSS, and some JavaScript. The Angular SPA also uses HTML and CSS but makes heavy use of components, services, and routes, which are unique to Angular. The main difference between the two is where they are run. The HTML for the Express MVC is running on the server, while the Angular SPA will be sent and run on the user's web browser. 
-A NoSQL database (MongoDB) was used for its flexibility compared to SQL. MongoDB uses JSON, which is the standard form of communication for other parts of this application. JSON can be converted into JS objects and vice versa. Using a NoSQL database also makes future changes to the applications much easier.
+Various frontend frameworks were used for the two applications. The Express MVC app utilizes HTML, CSS, and some JavaScript. The Angular SPA also uses HTML and CSS but makes heavy use of components, services, and routes, which are unique to Angular. The main difference between the two is where they are run. The HTML for the Express MVC is running on the server, while the Angular SPA will be sent and run on the user's web browser. **The flow of how data is shown to the user can be seen in the sequence diagram below:**
+
+![Picture of Sequence Diagram](https://github.com/crestongetz/Travlr-Getaways/blob/9ca99ccf35afc888ff3e5f0ace876f0ec861aa32/images/Sequence%20Diagram_Travlr%20Getaways.png)
+
+A NoSQL database (MongoDB) was used for its flexibility compared to SQL. MongoDB uses JSON, which is the standard form of communication for other parts of this application. JSON can be converted into JS objects and vice versa. Using a NoSQL database also makes future changes to the applications much easier. 
 
 ## Functionality & Development 
 
